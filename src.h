@@ -82,13 +82,7 @@ int minimax(int deep,bool is_me,char me){
 		op='X';
 	}
 	int score=E(me);
-	bool full=true;
-    for(int i=1;i<=9;i++){
-    	if(chess[i]==' '){
-    		full=false;
-		}
-	}
-	if(score>=1e5||score<=-1e5||deep==0||full){
+	if(score>=1e5||score<=-1e5||deep<=0){
 		return score;
 	}
 	if(is_me){
@@ -116,7 +110,7 @@ int minimax(int deep,bool is_me,char me){
 }
 std::pair<int,int> chess_go(char me){
 	std::pair<int,int> ans;
-	int maxx=-1e6,deep=1;//-1e6<-1e5
+	int maxx=-1e6,deep=-1;//-1e6<-1e5
 	for(int i=1;i<=3;i++){
 		for(int j=1;j<=3;j++){
 			if(chess[p(i,j)]==' '){
