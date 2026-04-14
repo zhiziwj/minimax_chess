@@ -61,7 +61,7 @@ int E(char me){
 			}
 			continue;
 		}
-		if(my_cnt==2){
+		if(my_cnt==2&&op_cnt<1){
 			score+=6;
 		}
 		else if(my_cnt==1){
