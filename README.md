@@ -1,4 +1,3 @@
-=======
 ## Minimax Tic-Tac-Toe AI
 本项目基于 C++98 实现了一个使用 Minimax 算法的井字棋 AI。
 
