@@ -11,4 +11,3 @@
 确保本地环境支持 C++98 标准，执行以下命令进行编译与运行：
 ~~~
 g++ main.cpp -o minimax -std=c++98./minimax
->>>>>>> d6bc9555656fb6fe51512458d6b3fe32c5c43c0f
